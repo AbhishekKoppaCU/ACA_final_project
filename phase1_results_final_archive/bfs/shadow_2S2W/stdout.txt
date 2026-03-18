@@ -1,0 +1,40 @@
+Global frequency set at 1000000000000 ticks per second
+ROB size for each thread 64
+Decode SingleThreadFetchiew 0
+rename SingleThreadFetchiew 0 0
+iqPolicy 4 SDynamicWStatic 4
+tid:0 IQ size  128
+tid:1 IQ size  128
+tid:2 IQ size  10
+tid:3 IQ size  10
+tid:0 LSQ sharing policy set to 4: 36 entries per LQ | 34 entries per SQ
+tid:1 LSQ sharing policy set to 4: 36 entries per LQ | 34 entries per SQ
+tid:2 LSQ sharing policy set to 4: 5 entries per LQ | 5 entries per SQ
+tid:3 LSQ sharing policy set to 4: 5 entries per LQ | 5 entries per SQ
+iew SingleThreadFetchiew 0
+Registers per thread: numPhysIntRegs 42 numPhysFloatRegs 0 numPhysVecRegs 44 numPhysVecPredRegs 18 numPhysCCRegs 6
+Regs for renaming IntRegClass 132 usedRegs 48
+Regs for renaming FloatRegClass 300 usedRegs 300
+Regs for renaming VecRegClass 124 usedRegs 36
+Regs for renaming VecPredRegClass 728 usedRegs 692
+Regs for renaming CCRegClass 1476 usedRegs 1464
+RegClassType: 0, Number of Registers: 42
+RegClassType: 1, Number of Registers: 0
+RegClassType: 2, Number of Registers: 44
+RegClassType: 3, Number of Registers: 2816
+RegClassType: 4, Number of Registers: 18
+RegClassType: 5, Number of Registers: 6
+gem5 Simulator System.  https://www.gem5.org
+gem5 is copyrighted software; use the --copyright option for details.
+
+gem5 version 22.1.0.0
+gem5 compiled Mar 16 2026 16:31:30
+gem5 started Mar 18 2026 17:15:31
+gem5 executing on snow09.colorado.edu, pid 409461
+command line: build/ARM/gem5.opt -d ../phase1_results/bfs/shadow_2S2W configs/example/se_SMT_ARM.py --cmd=bmrk_binaries/CRONO/bfs '--options=4 graph4096.txt' --threadTypes S --cpu=o3_grace_test --mem-type=DDR4_2400_16x4 --mem-size=2GB --mem-channels=2 --num-cpus=1 --smt -t 4 -WThreads 2 -SThreads 2 -FirstThreadSOtherW=True -ROBSize 128 -numSIQEntries 128 -numWIQEntries 10 -numIQEntries 128 -LQEntries 72 -SQEntries 68 -numPhysFloatRegs 300 -numPhysVecRegs 300 -numPhysIntRegs 300
+
+<_m5.object_file.ObjectFile object at 0x7f0c4fbcccb0>   <class '_m5.object_file.ObjectFile'>
+system.cpu_cluster.cpus  1  processes  1
+Reading File
+Error Reading graph file
+exiting with last active thread context  @  26019500

@@ -1,0 +1,37 @@
+Global frequency set at 1000000000000 ticks per second
+ROB size for each thread 64
+Decode SingleThreadFetchiew 0
+rename SingleThreadFetchiew 0 0
+iqPolicy 4 SDynamicWStatic 4
+tid:0 IQ size  128
+tid:1 IQ size  128
+tid:0 LSQ sharing policy set to 4: 36 entries per LQ | 34 entries per SQ
+tid:1 LSQ sharing policy set to 4: 36 entries per LQ | 34 entries per SQ
+iew SingleThreadFetchiew 0
+Registers per thread: numPhysIntRegs 42 numPhysFloatRegs 0 numPhysVecRegs 44 numPhysVecPredRegs 18 numPhysCCRegs 6
+Regs for renaming IntRegClass 216 usedRegs 132
+Regs for renaming FloatRegClass 300 usedRegs 300
+Regs for renaming VecRegClass 212 usedRegs 124
+Regs for renaming VecPredRegClass 764 usedRegs 728
+Regs for renaming CCRegClass 1488 usedRegs 1476
+RegClassType: 0, Number of Registers: 42
+RegClassType: 1, Number of Registers: 0
+RegClassType: 2, Number of Registers: 44
+RegClassType: 3, Number of Registers: 2816
+RegClassType: 4, Number of Registers: 18
+RegClassType: 5, Number of Registers: 6
+gem5 Simulator System.  https://www.gem5.org
+gem5 is copyrighted software; use the --copyright option for details.
+
+gem5 version 22.1.0.0
+gem5 compiled Mar 16 2026 16:31:30
+gem5 started Mar 18 2026 17:15:32
+gem5 executing on snow09.colorado.edu, pid 409462
+command line: build/ARM/gem5.opt -d ../phase1_results/bc/baseline_SMT configs/example/se_SMT_ARM.py --cmd=bmrk_binaries/CRONO/bc_work_stealing '--options=2 128 16' --threadTypes S S --cpu=o3_grace_test --mem-type=DDR4_2400_16x4 --mem-size=2GB --mem-channels=2 --num-cpus=1 --smt -t 2 -WThreads 0 -SThreads 2 -FirstThreadSOtherW=False -ROBSize 128 -numSIQEntries 128 -numWIQEntries 10 -numIQEntries 128 -LQEntries 72 -SQEntries 68 -numPhysFloatRegs 300 -numPhysVecRegs 300 -numPhysIntRegs 300
+
+<_m5.object_file.ObjectFile object at 0x7faaff7d38b0>   <class '_m5.object_file.ObjectFile'>
+system.cpu_cluster.cpus  1  processes  1
+
+Threads Joined!
+Time: 0.000330 seconds
+exiting with last active thread context  @  396063250

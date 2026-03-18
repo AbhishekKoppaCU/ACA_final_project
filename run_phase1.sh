@@ -33,17 +33,17 @@ mkdir -p $OUT_BASE/bc/shadow_2S2W
 # Arguments: <num_threads> <graph_file> -> "4 graph4096.txt"
 # ==============================================================================
 echo ""
-echo ">>> [1/4] Running BFS: Baseline Standard SMT (4 Strong Threads)..."
+echo ">>> [1/4] Running BFS: Baseline Standard SMT (2 Strong Threads)..."
 time build/ARM/gem5.opt -d $OUT_BASE/bfs/baseline_SMT configs/example/se_SMT_ARM.py \
     --cmd="bmrk_binaries/CRONO/bfs" \
-    --options="4 graph4096.txt" \
-    --threadTypes S S S S \
+    --options="2 graph4096.txt" \
+    --threadTypes S S \
     --cpu="o3_grace_test" \
     --mem-type=DDR4_2400_16x4 \
     --mem-size=2GB \
     --mem-channels=2 \
     --num-cpus=1 \
-    --smt -t 4 -WThreads 0 -SThreads 4 \
+    --smt -t 2 -WThreads 0 -SThreads 2 \
     -FirstThreadSOtherW=False \
     -ROBSize $ROBSize -numSIQEntries $numSIQEntries -numWIQEntries $numWIQEntries -numIQEntries $numSIQEntries \
     -LQEntries $LQEntries -SQEntries $SQEntries \
@@ -73,17 +73,17 @@ time build/ARM/gem5.opt -d $OUT_BASE/bfs/shadow_2S2W configs/example/se_SMT_ARM.
 # Arguments: <num_threads> <nodes> <edges> -> "4 128 16"
 # ==============================================================================
 echo ""
-echo ">>> [3/4] Running BC: Baseline Standard SMT (4 Strong Threads)..."
+echo ">>> [3/4] Running BC: Baseline Standard SMT (2 Strong Threads)..."
 time build/ARM/gem5.opt -d $OUT_BASE/bc/baseline_SMT configs/example/se_SMT_ARM.py \
     --cmd="bmrk_binaries/CRONO/bc_work_stealing" \
-    --options="4 128 16" \
-    --threadTypes S S S S \
+    --options="2 128 16" \
+    --threadTypes S S \
     --cpu="o3_grace_test" \
     --mem-type=DDR4_2400_16x4 \
     --mem-size=2GB \
     --mem-channels=2 \
     --num-cpus=1 \
-    --smt -t 4 -WThreads 0 -SThreads 4 \
+    --smt -t 2 -WThreads 0 -SThreads 2 \
     -FirstThreadSOtherW=False \
     -ROBSize $ROBSize -numSIQEntries $numSIQEntries -numWIQEntries $numWIQEntries -numIQEntries $numSIQEntries \
     -LQEntries $LQEntries -SQEntries $SQEntries \

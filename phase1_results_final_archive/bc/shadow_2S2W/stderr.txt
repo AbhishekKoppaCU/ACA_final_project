@@ -1,0 +1,87 @@
+warn: The `get_runtime_isa` function is deprecated. Please migrate away from using this function.
+warn: No dot file generated. Please install pydot to generate the dot file and pdf.
+build/ARM/mem/dram_interface.cc:690: warn: DRAM device capacity (32768 Mbytes) does not match the address range assigned (1024 Mbytes)
+build/ARM/mem/dram_interface.cc:690: warn: DRAM device capacity (32768 Mbytes) does not match the address range assigned (1024 Mbytes)
+build/ARM/base/statistics.hh:280: warn: One of the stats is a legacy stat. Legacy stat is a stat that does not belong to any statistics::Group. Legacy stat is deprecated.
+build/ARM/base/statistics.hh:280: warn: One of the stats is a legacy stat. Legacy stat is a stat that does not belong to any statistics::Group. Legacy stat is deprecated.
+[tid:0] InitThread Adding new thread Type: 1 Strong ActiveThreads: 0 TotalThreads: 2 Weak ActiveThreads: 0 TotalThreads: 2
+Thread type for thread 0: 1
+Thread type for thread 1: 1
+Thread type for thread 2: 2
+Thread type for thread 3: 2
+0: system.remote_gdb: listening for remote gdb on port 7000
+[tid:0] activateThread Cycle 0 Adding new thread Type: 1 Strong ActiveThreads: 1 TotalThreads: 2 Weak ActiveThreads: 0 TotalThreads: 2
+build/ARM/sim/simulate.cc:192: info: Entering event queue @ 0.  Starting simulation...
+build/ARM/sim/syscall_emul.cc:74: warn: ignoring syscall set_robust_list(...)
+build/ARM/sim/syscall_emul.cc:74: warn: ignoring syscall rt_sigaction(...)
+build/ARM/sim/syscall_emul.cc:74: warn: ignoring syscall rt_sigaction(...)
+build/ARM/sim/syscall_emul.cc:85: warn: ignoring syscall rt_sigprocmask(...)
+      (further warnings will be suppressed)
+build/ARM/arch/arm/insts/pseudo.cc:172: warn: 	instruction 'bti' unimplemented
+build/ARM/sim/mem_state.cc:456: info: Increasing stack size by one page.
+build/ARM/sim/syscall_emul.hh:1021: warn: readlink() called on '/proc/self/exe' may yield unexpected results in various settings.
+      Returning '/home/abko1068/aca/final_project/gem5-SHADOW/bmrk_binaries/CRONO/bc_work_stealing'
+build/ARM/sim/syscall_emul.cc:74: warn: ignoring syscall mprotect(...)
+build/ARM/sim/syscall_emul.cc:74: warn: ignoring syscall mprotect(...)
+[tid:1] activateThread Cycle 239810 Adding new thread Type: 1 Strong ActiveThreads: 2 TotalThreads: 2 Weak ActiveThreads: 0 TotalThreads: 2
+build/ARM/sim/power_state.cc:105: warn: PowerState: Already in the requested power state, request ignored
+build/ARM/arch/arm/isa.hh:210: warn: User mode does not have SPSR
+build/ARM/arch/arm/isa.hh:210: warn: User mode does not have SPSR
+build/ARM/sim/syscall_emul.cc:74: warn: ignoring syscall mprotect(...)
+build/ARM/sim/syscall_emul.cc:74: warn: ignoring syscall set_robust_list(...)
+[tid:2] activateThread Cycle 242862 Adding new thread Type: 2 Strong ActiveThreads: 2 TotalThreads: 2 Weak ActiveThreads: 1 TotalThreads: 2
+build/ARM/arch/arm/isa.hh:210: warn: User mode does not have SPSR
+build/ARM/arch/arm/isa.hh:210: warn: User mode does not have SPSR
+build/ARM/sim/syscall_emul.cc:74: warn: ignoring syscall mprotect(...)
+build/ARM/sim/syscall_emul.cc:74: warn: ignoring syscall set_robust_list(...)
+build/ARM/sim/syscall_emul.cc:74: warn: ignoring syscall mprotect(...)
+[tid:3] activateThread Cycle 245455 Adding new thread Type: 2 Strong ActiveThreads: 2 TotalThreads: 2 Weak ActiveThreads: 2 TotalThreads: 2
+build/ARM/arch/arm/isa.hh:210: warn: User mode does not have SPSR
+build/ARM/arch/arm/isa.hh:210: warn: User mode does not have SPSR
+build/ARM/sim/syscall_emul.cc:74: warn: ignoring syscall set_robust_list(...)
+build/ARM/sim/syscall_emul.cc:74: warn: ignoring syscall mprotect(...)
+build/ARM/sim/syscall_emul.cc:74: warn: ignoring syscall mprotect(...)
+[tid:3] deactivateThread Cycle 791184 Removing new thread Type: 2 Strong ActiveThreads: 2 TotalThreads: 2 Weak ActiveThreads: 1 TotalThreads: 2
+[tid:3] activateThread Cycle 791521 Adding new thread Type: 2 Strong ActiveThreads: 2 TotalThreads: 2 Weak ActiveThreads: 2 TotalThreads: 2
+[tid:0] deactivateThread Cycle 1457006 Removing new thread Type: 1 Strong ActiveThreads: 1 TotalThreads: 2 Weak ActiveThreads: 2 TotalThreads: 2
+[tid:1] deactivateThread Cycle 1457013 Removing new thread Type: 1 Strong ActiveThreads: 0 TotalThreads: 2 Weak ActiveThreads: 2 TotalThreads: 2
+[tid:2] deactivateThread Cycle 1473639 Removing new thread Type: 2 Strong ActiveThreads: 0 TotalThreads: 2 Weak ActiveThreads: 1 TotalThreads: 2
+[tid:0] activateThread Cycle 1479321 Adding new thread Type: 1 Strong ActiveThreads: 1 TotalThreads: 2 Weak ActiveThreads: 1 TotalThreads: 2
+[tid:1] activateThread Cycle 1479321 Adding new thread Type: 1 Strong ActiveThreads: 2 TotalThreads: 2 Weak ActiveThreads: 1 TotalThreads: 2
+[tid:2] activateThread Cycle 1479321 Adding new thread Type: 2 Strong ActiveThreads: 2 TotalThreads: 2 Weak ActiveThreads: 2 TotalThreads: 2
+[tid:0] deactivateThread Cycle 1479474 Removing new thread Type: 1 Strong ActiveThreads: 1 TotalThreads: 2 Weak ActiveThreads: 2 TotalThreads: 2
+[tid:0] activateThread Cycle 1479505 Adding new thread Type: 1 Strong ActiveThreads: 2 TotalThreads: 2 Weak ActiveThreads: 2 TotalThreads: 2
+[tid:3] deactivateThread Cycle 1479859 Removing new thread Type: 2 Strong ActiveThreads: 2 TotalThreads: 2 Weak ActiveThreads: 1 TotalThreads: 2
+[tid:3] activateThread Cycle 1480103 Adding new thread Type: 2 Strong ActiveThreads: 2 TotalThreads: 2 Weak ActiveThreads: 2 TotalThreads: 2
+[tid:1] deactivateThread Cycle 1480107 Removing new thread Type: 1 Strong ActiveThreads: 1 TotalThreads: 2 Weak ActiveThreads: 2 TotalThreads: 2
+[tid:1] activateThread Cycle 1480155 Adding new thread Type: 1 Strong ActiveThreads: 2 TotalThreads: 2 Weak ActiveThreads: 2 TotalThreads: 2
+[tid:1] deactivateThread Cycle 1480212 Removing new thread Type: 1 Strong ActiveThreads: 1 TotalThreads: 2 Weak ActiveThreads: 2 TotalThreads: 2
+[tid:1] activateThread Cycle 1480481 Adding new thread Type: 1 Strong ActiveThreads: 2 TotalThreads: 2 Weak ActiveThreads: 2 TotalThreads: 2
+[tid:1] deactivateThread Cycle 1480532 Removing new thread Type: 1 Strong ActiveThreads: 1 TotalThreads: 2 Weak ActiveThreads: 2 TotalThreads: 2
+[tid:1] activateThread Cycle 1480561 Adding new thread Type: 1 Strong ActiveThreads: 2 TotalThreads: 2 Weak ActiveThreads: 2 TotalThreads: 2
+[tid:1] deactivateThread Cycle 1482033 Removing new thread Type: 1 Strong ActiveThreads: 1 TotalThreads: 2 Weak ActiveThreads: 2 TotalThreads: 2
+[tid:1] activateThread Cycle 1482183 Adding new thread Type: 1 Strong ActiveThreads: 2 TotalThreads: 2 Weak ActiveThreads: 2 TotalThreads: 2
+[tid:1] deactivateThread Cycle 1482228 Removing new thread Type: 1 Strong ActiveThreads: 1 TotalThreads: 2 Weak ActiveThreads: 2 TotalThreads: 2
+[tid:1] activateThread Cycle 1482255 Adding new thread Type: 1 Strong ActiveThreads: 2 TotalThreads: 2 Weak ActiveThreads: 2 TotalThreads: 2
+[tid:0] deactivateThread Cycle 1482369 Removing new thread Type: 1 Strong ActiveThreads: 1 TotalThreads: 2 Weak ActiveThreads: 2 TotalThreads: 2
+[tid:1] deactivateThread Cycle 1482488 Removing new thread Type: 1 Strong ActiveThreads: 0 TotalThreads: 2 Weak ActiveThreads: 2 TotalThreads: 2
+[tid:3] deactivateThread Cycle 1482686 Removing new thread Type: 2 Strong ActiveThreads: 0 TotalThreads: 2 Weak ActiveThreads: 1 TotalThreads: 2
+[tid:0] activateThread Cycle 1483284 Adding new thread Type: 1 Strong ActiveThreads: 1 TotalThreads: 2 Weak ActiveThreads: 1 TotalThreads: 2
+[tid:1] activateThread Cycle 1483284 Adding new thread Type: 1 Strong ActiveThreads: 2 TotalThreads: 2 Weak ActiveThreads: 1 TotalThreads: 2
+[tid:3] activateThread Cycle 1483284 Adding new thread Type: 2 Strong ActiveThreads: 2 TotalThreads: 2 Weak ActiveThreads: 2 TotalThreads: 2
+[tid:1] deactivateThread Cycle 1483452 Removing new thread Type: 1 Strong ActiveThreads: 1 TotalThreads: 2 Weak ActiveThreads: 2 TotalThreads: 2
+[tid:2] deactivateThread Cycle 1483545 Removing new thread Type: 2 Strong ActiveThreads: 1 TotalThreads: 2 Weak ActiveThreads: 1 TotalThreads: 2
+[tid:3] deactivateThread Cycle 1483633 Removing new thread Type: 2 Strong ActiveThreads: 1 TotalThreads: 2 Weak ActiveThreads: 0 TotalThreads: 2
+[tid:1] activateThread Cycle 1484674 Adding new thread Type: 1 Strong ActiveThreads: 2 TotalThreads: 2 Weak ActiveThreads: 0 TotalThreads: 2
+[tid:2] activateThread Cycle 1484674 Adding new thread Type: 2 Strong ActiveThreads: 2 TotalThreads: 2 Weak ActiveThreads: 1 TotalThreads: 2
+[tid:3] activateThread Cycle 1484674 Adding new thread Type: 2 Strong ActiveThreads: 2 TotalThreads: 2 Weak ActiveThreads: 2 TotalThreads: 2
+[tid:0] deactivateThread Cycle 1487297 Removing new thread Type: 1 Strong ActiveThreads: 1 TotalThreads: 2 Weak ActiveThreads: 2 TotalThreads: 2
+[tid:3] deactivateThread Cycle 1487715 Removing new thread Type: 2 Strong ActiveThreads: 1 TotalThreads: 2 Weak ActiveThreads: 1 TotalThreads: 2
+[tid:3] activateThread Cycle 1487766 Adding new thread Type: 2 Strong ActiveThreads: 1 TotalThreads: 2 Weak ActiveThreads: 2 TotalThreads: 2
+build/ARM/sim/syscall_emul.cc:74: warn: ignoring syscall madvise(...)
+[tid:0] activateThread Cycle 1487827 Adding new thread Type: 1 Strong ActiveThreads: 2 TotalThreads: 2 Weak ActiveThreads: 2 TotalThreads: 2
+[tid:1] deactivateThread Cycle 1487833 Removing new thread Type: 1 Strong ActiveThreads: 1 TotalThreads: 2 Weak ActiveThreads: 2 TotalThreads: 2
+build/ARM/sim/syscall_emul.cc:74: warn: ignoring syscall madvise(...)
+[tid:2] deactivateThread Cycle 1488114 Removing new thread Type: 2 Strong ActiveThreads: 1 TotalThreads: 2 Weak ActiveThreads: 1 TotalThreads: 2
+build/ARM/sim/syscall_emul.cc:74: warn: ignoring syscall madvise(...)
+[tid:3] deactivateThread Cycle 1488249 Removing new thread Type: 2 Strong ActiveThreads: 1 TotalThreads: 2 Weak ActiveThreads: 0 TotalThreads: 2
