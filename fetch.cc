@@ -1982,48 +1982,10 @@ Fetch::recvReqRetry(bool isStrong)
 //  SMT FETCH POLICY MAINTAINED HERE //
 //                                   //
 ///////////////////////////////////////
-
 ThreadID
 Fetch::getFetchingThread()
 {
     if (numThreads > 1) {
-        // ========================================================
-        // PHASE 2 ABLATION: TRUE FAIR ROUND-ROBIN
-        // Iterates activeThreads like all other policies, but
-        // rotates the starting point each call so no thread
-        // is permanently first. roundRobin() is broken (wrong
-        // list iterator), so we implement rotation correctly here.
-        // ========================================================
-        static ThreadID rrLast = 0;
-
-        // Snapshot active threads into a vector for indexed rotation
-        std::vector<ThreadID> activeTids(
-            activeThreads->begin(), activeThreads->end());
-
-        if (activeTids.empty()) return InvalidThreadID;
-
-        // Find where rrLast sits in the active list, start after it
-        int startIdx = 0;
-        for (int i = 0; i < (int)activeTids.size(); i++) {
-            if (activeTids[i] == rrLast) {
-                startIdx = (i + 1) % activeTids.size();
-                break;
-            }
-        }
-
-        // Walk from startIdx, return first eligible thread
-        for (int i = 0; i < (int)activeTids.size(); i++) {
-            ThreadID candidate = activeTids[(startIdx + i) % activeTids.size()];
-            if (fetchStatus[candidate] == Running ||
-                fetchStatus[candidate] == IcacheAccessComplete ||
-                fetchStatus[candidate] == Idle) {
-                rrLast = candidate;
-                return candidate;
-            }
-        }
-        return InvalidThreadID;
-
-        /* ORIGINAL SWITCH -- commented out for Phase 2 ablation
         switch (fetchPolicy) {
           case SMTFetchPolicy::RoundRobin:
             return roundRobin();
@@ -2040,7 +2002,6 @@ Fetch::getFetchingThread()
           default:
             return InvalidThreadID;
         }
-        */
     } else {
         std::list<ThreadID>::iterator thread = activeThreads->begin();
         if (thread == activeThreads->end()) {
